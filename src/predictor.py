@@ -1,6 +1,7 @@
 # src/predictor.py
 
 def predict(data):
-    # Exemplo: Uma função de previsão muito simples que retorna a soma dos dados como "previsão"
-    prediction = sum(data.values())
-    return prediction
+    """Example prediction function using the last close price."""
+    # Exemplo simples: retornar o último preço de fechamento como "previsão"
+    last_close_price = data['close'].iloc[-1]
+    return last_close_price
